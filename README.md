@@ -22,7 +22,7 @@ Check out the project here: [To-Do List Project](https://github.com/Rahul-chhaje
 
 ## How to Use
 1. **Create a To-Do List:** Add `/todolist-name` to the URL to create a new list. The app will automatically format the list name to proper case.
-2. **Add Tasks:** Enter a task description and click the "Add Task" button to add a task to your list.
+2. **Add Tasks:** Enter a task description and click the "+" button to add a task to your list.
 3. **Delete Tasks:** Click the delete icon next to a task to remove it.
 4. **Work in Progress:** The home page access functionality is under development, so currently, you can only access your to-do list by typing the list name in the URL.
 
