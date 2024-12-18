@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+  
+
+        <div class="box" id="heading">
+            <h1>
+                <%= weekday %>
+            </h1>
+        </div>
+
+        <div class="box">
+
+            <form action="/delete" method="post">
+          <%  itemlist.forEach(function(item){ %>
+                <div class="item">
+
+                    <input type="checkbox"  name="checkbox" value="<%= item._id %>" onChange="this.form.submit()">// when checkbox tick then form is submitted
+                    <p>
+                        <%= item.name %>
+                    </p>
+                </div>
+                
+            <%})%>
+            <input type="hidden" name="listName" value="<%= weekday %>"> // used for deleting items from list
+        </form>
+
+                <form class="item" action="/" method="post">
+                    <input type="text" name="item" placeholder="New Item" autocomplete="off">
+                    <button type="submit" name="listSubmit" value="<%= weekday %>">+</button>
+                  </form>
+                </div>
+              
+    
+</body>
+
+</html>
